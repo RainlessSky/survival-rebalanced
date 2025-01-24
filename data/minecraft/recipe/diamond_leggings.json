@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "@#@",
+    "@ @",
+    "@ @"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond_block",
+      "count": 1
+    },
+    "@": {
+      "item": "minecraft:diamond",
+      "count": 1
+    }
+  },
+  "result": {
+    "id": "minecraft:diamond_leggings",
+    "count": 1
+  }
+}

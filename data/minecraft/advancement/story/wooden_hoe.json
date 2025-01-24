@@ -1,0 +1,29 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:wooden_hoe",
+			"nbt": "{damage:0}"
+		  },
+		"title": "Time to Farm!",
+		"description": "Craft a Wooden Hoe"
+	  },
+	"parent": "minecraft:story/obtained_wood",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:wooden_hoe"
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"experience": 4
+	},
+	"sends_telemetry_event": false
+}

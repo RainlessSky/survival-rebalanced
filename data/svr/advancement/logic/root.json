@@ -1,0 +1,9 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {},
+	"sends_telemetry_event": false
+}

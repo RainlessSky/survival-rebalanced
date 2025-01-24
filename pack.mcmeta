@@ -1,0 +1,63 @@
+{
+	"pack": {
+		"pack_format": 48,
+		"description": "§7MC 1.21 §8•§7 By RainlessSky"
+	},
+	"features": {
+		"enabled": [
+			"minecraft:bundle"
+		]
+	},
+	"filter": {
+		"block": [
+			{
+				"namespace": "minecraft",
+				"path": "recipe/baked_potato.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "recipe/cooked_beef.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "recipe/cooked_porkchop.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "recipe/cooked_chicken.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "recipe/cooked_mutton.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "recipe/cooked_rabbit.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "recipe/cooked_cod.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "recipe/cooked_salmon.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "recipe/dried_kelp.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "advancement/story/.*"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "advancement/adventure/.*"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "advancement/nether/.*"
+			}
+		]
+	}
+}

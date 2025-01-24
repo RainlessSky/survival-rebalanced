@@ -1,0 +1,27 @@
+{
+	"display": {
+		"description": {
+		  "translate": "advancements.story.enter_the_nether.description"
+		},
+		"icon": {
+		  "id": "minecraft:obsidian"
+		},
+		"title": {
+		  "translate": "advancements.story.enter_the_nether.title"
+		},
+		"frame": "goal"
+	  },
+	"parent": "minecraft:story/acquired_diamonds",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:changed_dimension",
+			"conditions": {
+				"to": "minecraft:the_nether"
+			}
+		}
+	},
+	"rewards": {
+		"experience": 15
+	},
+	"sends_telemetry_event": false
+}

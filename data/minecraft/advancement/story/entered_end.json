@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:end_stone"
+		},
+		"title": "The End?",
+		"description": "Enter the End",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"parent": "minecraft:story/follow_ender_eye",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:changed_dimension",
+			"conditions": {
+				"to": "minecraft:the_end"
+			}
+		}
+	},
+	"rewards": {},
+	"sends_telemetry_event": false
+}

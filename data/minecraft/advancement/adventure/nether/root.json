@@ -1,0 +1,31 @@
+{
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+		"has_been_in_nether": {
+			"trigger": "minecraft:changed_dimension",
+			"conditions": {
+				"to": "minecraft:the_nether"
+			}
+		}
+	},
+  "display": {
+    "hidden": true,
+    "announce_to_chat": false,
+    "description": {
+      "text": "Adventures in the Nether"
+    },
+    "icon": {
+      "id": "minecraft:netherrack"
+    },
+    "show_toast": false,
+    "title": {
+			"translate": "advancements.nether.root.title"
+		}
+  },
+  "requirements": [
+    [
+      "has_been_in_nether"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

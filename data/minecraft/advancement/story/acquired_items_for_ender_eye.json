@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:ender_eye"
+		},
+		"title": "Eyes of... who?",
+		"description": "How are Blaze Rods and Ender Pearls related?",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:story/entered_nether",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+			"items": [
+				{
+					"items": [
+						"minecraft:blaze_rod"
+						]
+					},
+				{
+						"items": [
+							"minecraft:ender_pearl"
+							]
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"experience": 5
+	},
+	"sends_telemetry_event": false
+}

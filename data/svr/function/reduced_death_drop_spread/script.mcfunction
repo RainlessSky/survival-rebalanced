@@ -1,0 +1,3 @@
+execute at @a[advancements={svr:logic/reduced_death_drop_spread=true}] positioned ~ ~1.8 ~ as @e[type=item,distance=...6] store result entity @s Motion[0] double 0.02 run data get entity @s Motion[0]
+execute at @a[advancements={svr:logic/reduced_death_drop_spread=true}] positioned ~ ~1.8 ~ as @e[type=item,distance=...6] store result entity @s Motion[2] double 0.02 run data get entity @s Motion[2]
+execute as @a[advancements={svr:logic/reduced_death_drop_spread=true}] run advancement revoke @s only svr:logic/reduced_death_drop_spread

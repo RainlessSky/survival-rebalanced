@@ -1,0 +1,2 @@
+execute if score enabled svr.reduced_death_drop_spread matches 1 run schedule function svr:reduced_death_drop_spread/script 1t append
+execute if score enabled svr.reduced_death_drop_spread matches 0 run advancement revoke @s only svr:logic/reduced_death_drop_spread

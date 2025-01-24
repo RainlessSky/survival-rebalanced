@@ -1,0 +1,1 @@
+execute unless data storage svr:world_data {svr_version:193} run function svr:utility/setup

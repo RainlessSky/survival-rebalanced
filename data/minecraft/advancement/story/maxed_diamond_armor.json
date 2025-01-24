@@ -1,0 +1,145 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:diamond_chestplate",
+			"nbt": "{damage:0}"
+		},
+		"title": "Overpowered",
+		"description": "Obtain all 4 pieces of Diamond armor, with all enchantments maxed excluding Mending, Thorns, Frost Walker, and curses",
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"parent": "minecraft:story/enchanted_item",
+	"criteria": {
+		"diamond_boots": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:diamond_boots"
+						],
+						"enchantments": [
+							{
+								"enchantment": "minecraft:protection",
+								"levels": 4
+							},
+							{
+								"enchantment": "minecraft:depth_strider",
+								"levels": 3
+							},
+							{
+								"enchantment": "minecraft:soul_speed",
+								"levels": 3
+							},
+							{
+								"enchantment": "minecraft:feather_falling",
+								"levels": 4
+							},
+							{
+								"enchantment": "minecraft:unbreaking",
+								"levels": 3
+							}
+						]
+					},
+					{}
+				]
+			}
+		},
+		"diamond_leggings": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:diamond_leggings"
+						],
+						"enchantments": [
+							{
+								"enchantment": "minecraft:protection",
+								"levels": 4
+							},
+							{
+								"enchantment": "minecraft:swift_sneak",
+								"levels": 3
+							},
+							{
+								"enchantment": "minecraft:unbreaking",
+								"levels": 3
+							}
+						]
+					},
+					{}
+				]
+			}
+		},
+		"diamond_chestplate": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:diamond_chestplate"
+						],
+						"enchantments": [
+							{
+								"enchantment": "minecraft:protection",
+								"levels": 4
+							},
+							{
+								"enchantment": "minecraft:unbreaking",
+								"levels": 3
+							}
+						]
+					},
+					{}
+				]
+			}
+		},
+		"diamond_helmet": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:diamond_helmet"
+						],
+						"enchantments": [
+							{
+								"enchantment": "minecraft:protection",
+								"levels": 4
+							},
+							{
+								"enchantment": "minecraft:aqua_affinity",
+								"levels": 1
+							},
+							{
+								"enchantment": "minecraft:respiration",
+								"levels": 3
+							},
+							{
+								"enchantment": "minecraft:unbreaking",
+								"levels": 3
+							}
+						]
+					},
+					{}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"diamond_boots",
+			"diamond_leggings",
+			"diamond_chestplate",
+			"diamond_helmet"
+		]
+	],
+	"rewards": {
+		"experience": 250
+	},
+	"sends_telemetry_event": false
+}

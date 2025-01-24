@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "PCP",
+    "CIC",
+    "PCP"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:cobblestone",
+      "count": 1
+    },
+    "P": {
+      "tag": "minecraft:planks",
+      "count": 1
+    },
+    "I": {
+      "item": "minecraft:iron_ingot",
+      "count": 1
+    }
+  },
+  "result": {
+    "id": "minecraft:smoker",
+    "count": 1
+  }
+}

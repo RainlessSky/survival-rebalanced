@@ -1,0 +1,1 @@
+execute as @e[type=creeper] unless data entity @s {Fire:-1s} run data merge entity @s {ignited:1b}

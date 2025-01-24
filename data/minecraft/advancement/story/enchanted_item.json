@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:enchanting_table"
+		},
+		"title": "Shiny Shiny",
+		"description": "Enchant an item at an Enchanting Table",
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:story/acquired_diamonds",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:enchanted_item",
+			"conditions": {}
+		}
+	},
+	"rewards": {},
+	"sends_telemetry_event": false
+}

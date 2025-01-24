@@ -1,0 +1,44 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:diamond_helmet",
+			"nbt": "{damage:0}"
+		},
+		"title": "My Money Grew Legs",
+		"description": "Craft Diamond armor",
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:story/acquired_diamonds",
+	"criteria": {
+		"task_completed": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:diamond_boots",
+							"minecraft:diamond_leggings",
+							"minecraft:diamond_chestplate",
+							"minecraft:diamond_helmet",
+							"minecraft:diamond_sword",
+							"minecraft:diamond_axe",
+							"minecraft:diamond_pickaxe"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+			"task_completed"
+		]
+	],
+	"rewards": {
+		"experience": 15
+	},
+	"sends_telemetry_event": false
+}

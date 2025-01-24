@@ -1,0 +1,34 @@
+{
+	"parent": "minecraft:recipes/root",
+	"criteria": {
+		"has_compass": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:compass"
+						]
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "minecraft:lodestone"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_the_recipe",
+			"has_compass"
+		]
+	],
+	"rewards": {
+		"recipes": [
+			"minecraft:lodestone"
+		]
+	}
+}

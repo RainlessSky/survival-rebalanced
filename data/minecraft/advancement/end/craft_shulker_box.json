@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:shulker_shell"
+		},
+		"title": "Where are Bundles?",
+		"description": "Craft a Shulker Box\n§8Still waiting, 4 years strong",
+		"frame": "goal",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "minecraft:end/find_end_city",
+	"criteria": {
+		"crafted_shulker_box": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "minecraft:shulker_box"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"crafted_shulker_box"
+		]
+	],
+	"sends_telemetry_event": false
+}
