@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:adventure/nether/root",
+  "parent": "minecraft:adventure/overworld/root",
   "criteria": {
     "use_lodestone": {
       "conditions": {

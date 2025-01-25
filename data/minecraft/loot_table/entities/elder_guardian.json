@@ -19,12 +19,13 @@
 							"add": false
 						},
 						{
-							"function": "minecraft:looting_enchant",
+							"function": "minecraft:enchanted_count_increase",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 0,
 								"max": 1
-							}
+							},
+							"enchantment": "minecraft:looting"
 						}
 					]
 				}
@@ -40,12 +41,13 @@
 					"weight": 3,
 					"functions": [
 						{
-							"function": "minecraft:looting_enchant",
+							"function": "minecraft:enchanted_count_increase",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 0,
 								"max": 1
-							}
+							},
+							"enchantment": "minecraft:looting"
 						},
 						{
 							"function": "minecraft:furnace_smelt",
@@ -69,12 +71,13 @@
 					"weight": 2,
 					"functions": [
 						{
-							"function": "minecraft:looting_enchant",
+							"function": "minecraft:enchanted_count_increase",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 0,
 								"max": 1
-							}
+							},
+							"enchantment": "minecraft:looting"
 						}
 					]
 				},
@@ -128,9 +131,10 @@
 					"condition": "minecraft:killed_by_player"
 				},
 				{
-					"condition": "minecraft:random_chance_with_looting",
-					"chance": 0.025,
-					"looting_multiplier": 0.01
+					"condition": "minecraft:random_chance_with_enchanted_bonus",
+					"unenchanted_chance": 0.025,
+					"enchanted_chance": 0.01,
+					"enchantment": "minecraft:looting"
 				}
 			]
 		},

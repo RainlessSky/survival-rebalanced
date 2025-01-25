@@ -1,2 +1,2 @@
-execute as @e[type=#svr:mob_buffs_spd3,tag=!given_buffs] run attribute @s minecraft:generic.movement_speed modifier add svr:sp/speed 0.15 add_value
+execute as @e[type=#svr:mob_buffs_spd3,tag=!given_buffs] run attribute @s minecraft:movement_speed modifier add svr:sp/speed 0.15 add_value
 tag @e[type=#svr:mob_buffs_spd3,tag=!given_buffs] add given_buffs

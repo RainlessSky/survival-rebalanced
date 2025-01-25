@@ -7,18 +7,9 @@
     "PCP"
   ],
   "key": {
-    "C": {
-      "item": "minecraft:cobblestone",
-      "count": 1
-    },
-    "P": {
-      "tag": "minecraft:planks",
-      "count": 1
-    },
-    "I": {
-      "item": "minecraft:iron_ingot",
-      "count": 1
-    }
+    "C": "minecraft:cobblestone",
+    "P": "#minecraft:planks",
+    "I": "minecraft:iron_ingot"
   },
   "result": {
     "id": "minecraft:smoker",

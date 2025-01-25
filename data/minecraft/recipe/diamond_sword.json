@@ -7,18 +7,9 @@
     " | "
   ],
   "key": {
-    "#": {
-      "item": "minecraft:diamond_block",
-      "count": 1
-    },
-    "@": {
-      "item": "minecraft:diamond",
-      "count": 1
-    },
-    "|": {
-      "item": "minecraft:stick",
-      "count": 1
-    }
+    "#": "minecraft:diamond_block",
+    "@": "minecraft:diamond",
+    "|": "minecraft:stick"
   },
   "result": {
     "id": "minecraft:diamond_sword",

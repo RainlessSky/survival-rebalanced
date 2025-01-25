@@ -11,7 +11,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-                    "weight": 10,
+					"weight": 10,
 					"name": "minecraft:map",
 					"functions": [
 						{

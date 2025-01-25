@@ -31,8 +31,7 @@
 						},
 						{
 							"function": "minecraft:enchant_with_levels",
-							"levels": 30,
-							"treasure": true
+							"levels": 30
 						}
 					]
 				},
@@ -52,8 +51,7 @@
 						},
 						{
 							"function": "minecraft:enchant_with_levels",
-							"levels": 30,
-							"treasure": true
+							"levels": 30
 						}
 					]
 				},
@@ -64,8 +62,7 @@
 					"functions": [
 						{
 							"function": "minecraft:enchant_with_levels",
-							"levels": 30,
-							"treasure": true
+							"levels": 30
 						}
 					]
 				},

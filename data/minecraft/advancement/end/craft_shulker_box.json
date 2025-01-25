@@ -3,8 +3,8 @@
 		"icon": {
 			"id": "minecraft:shulker_shell"
 		},
-		"title": "Where are Bundles?",
-		"description": "Craft a Shulker Box\n§8Still waiting, 4 years strong",
+		"title": "Here are Bundles",
+		"description": "Craft a Shulker Box\n§8At last!",
 		"frame": "goal",
 		"show_toast": true,
 		"announce_to_chat": true,

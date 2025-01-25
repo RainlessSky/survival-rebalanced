@@ -7,15 +7,9 @@
 		"/  "
 	],
 	"key": {
-		"%": {
-			"item": "minecraft:quartz"
-		},
-		"O": {
-			"item": "minecraft:heart_of_the_sea"
-		},
-		"/": {
-			"item": "minecraft:prismarine_shard"
-		}
+		"%": "minecraft:quartz",
+		"O": "minecraft:heart_of_the_sea",
+		"/": "minecraft:prismarine_shard"
 	},
 	"result": {
 		"id": "minecraft:trident",
