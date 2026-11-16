@@ -38,7 +38,8 @@ jobs:
         # you will need to manually specify what you want to upload:
         # files: build/libs/fabric/!(*-@(dev|sources|javadoc)).jar
 
-        name:
+        # 2.2.6-beta+mc26.3
+        name: ${{ github.ref }}
 
         loaders: |
           datapack
