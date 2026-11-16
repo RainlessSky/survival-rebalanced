@@ -2,7 +2,7 @@ name: Publish Survival Rebalanced
 
 on:
   release:
-    types: [edited]
+    types: [published]
 
 jobs:
   build:
