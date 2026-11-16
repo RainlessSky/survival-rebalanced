@@ -16,11 +16,11 @@ jobs:
       uses: TheDoctor0/zip-release@0.7.6
       with:
         # Filename for archive
-        filename: survival-rebalanced-${{ github.ref }}.zip # default is release.zip
+        filename: datapack/survival-rebalanced-${{ github.ref }}.zip # default is release.zip
         # Base path for archive files
-        #path: # optional, default is .
+        path: datapack # optional, default is .
         # Working directory before zipping
-        directory: datapack # optional, default is .
+        #directory: # optional, default is .
         # List of excluded files / directories
         #exclusions: # optional, default is 
         # List of excluded files / directories with recursive wildcards (only applies on Windows with `zip` type)
