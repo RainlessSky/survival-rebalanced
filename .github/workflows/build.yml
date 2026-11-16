@@ -49,9 +49,9 @@ jobs:
         name: ${{ github.event.release.tag_name }}
         version: ${{ github.event.release.name }}
 
-        loaders: |
-          datapack
-        environment: server
+        #loaders: |
+        #  datapack
+        #environment: server
 
         game-versions: |
           26.3
