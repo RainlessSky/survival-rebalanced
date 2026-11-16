@@ -1,5 +1,4 @@
-name: Publish Survival Rebalanced
-
+name: Publish Datapack
 on:
   release:
     types: [published,edited]
@@ -38,7 +37,7 @@ jobs:
         # An extra command that will run before zipping
         #command: # optional, default is 
 
-    - name: Publish on Modrinth
+    - name: Publish
       uses: Kira-NT/mc-publish@v3.3.2
       with:
         # If your build toolchain doesn't place the resulting artifacts directly in build/libs/,
@@ -49,8 +48,8 @@ jobs:
         name: ${{ github.event.release.tag_name }}
         version: ${{ github.event.release.name }}
 
-        #loaders: |
-        #  datapack
+        loaders: |
+          datapack
         #environment: server
 
         game-versions: |
