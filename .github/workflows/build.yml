@@ -18,9 +18,9 @@ jobs:
         # Filename for archive
         filename: survival-rebalanced-${{ github.ref_name }}.zip # default is release.zip
         # Base path for archive files
-        path: /datapack/ # optional, default is .
+        #path: /datapack/ # optional, default is .
         # Working directory before zipping
-        directory: ${{ github.workspace }} # optional, default is .
+        directory: ${{ github.workspace }}/datapack/ # optional, default is .
         # List of excluded files / directories
         #exclusions: # optional, default is 
         # List of excluded files / directories with recursive wildcards (only applies on Windows with `zip` type)
