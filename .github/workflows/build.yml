@@ -16,7 +16,7 @@ jobs:
       uses: TheDoctor0/zip-release@0.7.6
       with:
         # Filename for archive
-        filename: datapack/survival-rebalanced-${{ github.ref }}.zip # default is release.zip
+        filename: datapack/survival-rebalanced-${{ github.ref_name }}.zip # default is release.zip
         # Base path for archive files
         path: datapack # optional, default is .
         # Working directory before zipping
@@ -39,7 +39,7 @@ jobs:
         # files: build/libs/fabric/!(*-@(dev|sources|javadoc)).jar
 
         # 2.2.6-beta+mc26.3
-        name: ${{ github.ref }}
+        name: ${{ github.ref_name }}
 
         loaders: |
           datapack
