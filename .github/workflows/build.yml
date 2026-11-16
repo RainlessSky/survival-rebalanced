@@ -1,10 +1,7 @@
 name: Publish Survival Rebalanced
 
 on:
-  push:
-    branches: [ master, main, 'dev/*' ]
-  pull_request:
-    branches: [ master, main, 'dev/*' ]
+  release:
 
 jobs:
   build:
@@ -12,17 +9,47 @@ jobs:
     
     permissions:
       contents: write
-    steps:
-      - name: mc-publish
-        uses: Kira-NT/mc-publish@v3.3.2
-        with:
-          # If your build toolchain doesn't place the resulting artifacts directly in build/libs/,
-          # you will need to manually specify what you want to upload:
-          # files: build/libs/fabric/!(*-@(dev|sources|javadoc)).jar
+    steps: 
+    - name: Zip the datapack
+      # You may pin to the exact commit or the version.
+      # uses: TheDoctor0/zip-release@b57d897cb5d60cb78b51a507f63fa184cfe35554
+      uses: TheDoctor0/zip-release@0.7.6
+      with:
+        # Filename for archive
+        filename: survival-rebalanced.zip # default is release.zip
+        # Base path for archive files
+        path: datapack/ # optional, default is .
+        # Working directory before zipping
+        directory: datapack/ # optional, default is .
+        # List of excluded files / directories
+        #exclusions: # optional, default is 
+        # List of excluded files / directories with recursive wildcards (only applies on Windows with `zip` type)
+        #recursive_exclusions: # optional, default is 
+        # Provide any custom parameters to the zipping command
+        #custom: # optional, default is 
+        # Tool to use for archiving
+        #type: # optional, default is zip
+        # An extra command that will run before zipping
+        #command: # optional, default is 
+    - name: Publish on Modrinth
+      uses: Kira-NT/mc-publish@v3.3.2
+      with:
+        # If your build toolchain doesn't place the resulting artifacts directly in build/libs/,
+        # you will need to manually specify what you want to upload:
+        # files: build/libs/fabric/!(*-@(dev|sources|javadoc)).jar
 
-          # Only include this section if you wish to publish your assets to Modrinth.
-          modrinth-id: jPZFRfGa
-          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+        name:
 
-          # Only include this section if you wish to publish your assets to GitHub.
-          github-token: ${{ secrets.GH_TOKEN }}
+        loaders: |
+          datapack
+        environment: server
+
+        files: |
+          *.zip
+
+        # Only include this section if you wish to publish your assets to Modrinth.
+        modrinth-id: jPZFRfGa
+        modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+
+        # Only include this section if you wish to publish your assets to GitHub.
+        github-token: ${{ secrets.GH_TOKEN }}
