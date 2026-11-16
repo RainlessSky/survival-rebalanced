@@ -46,7 +46,8 @@ jobs:
         # files: build/libs/fabric/!(*-@(dev|sources|javadoc)).jar
 
         # 2.2.6-beta+mc26.3
-        name: ${{ github.ref_name }}
+        #name: ${{ github.ref_name }}
+        #version: ${{ github.ref_name }}
 
         loaders: |
           datapack
