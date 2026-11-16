@@ -1,0 +1,28 @@
+name: Publish Survival Rebalanced
+
+on:
+  push:
+    branches: [ master, main, 'dev/*' ]
+  pull_request:
+    branches: [ master, main, 'dev/*' ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    steps:
+      - name: mc-publish
+        uses: Kira-NT/mc-publish@v3.3.2
+        with:
+          # If your build toolchain doesn't place the resulting artifacts directly in build/libs/,
+          # you will need to manually specify what you want to upload:
+          # files: build/libs/fabric/!(*-@(dev|sources|javadoc)).jar
+
+          # Only include this section if you wish to publish your assets to Modrinth.
+          modrinth-id: jPZFRfGa
+          modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
+
+          # Only include this section if you wish to publish your assets to GitHub.
+          github-token: ${{ secrets.GH_TOKEN }}
