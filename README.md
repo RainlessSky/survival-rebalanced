@@ -1,5 +1,5 @@
 [!["Minecraft Rebalanced" Collection by RainlessSky](https://img.shields.io/badge/Minecraft%20Rebalanced-2A2B2F?style=flat-square&logo=modrinth&label=part%20of&labelColor=222329)](https://modrinth.com/collection/rWTOiG2z)
-![Minecraft Rebalanced sees survival as a survival game, and less of a free sandbox.](https://cdn.modrinth.com/data/jPZFRfGa/images/44bb901518cc46d51b180abdeda416dc02a51ea1.png)
+![The Minecraft Rebalanced collection sees Minecraft survival more as a survival game, and less as a free sandbox.](https://cdn.modrinth.com/data/jPZFRfGa/images/44d72a4d0341105299fc1f22b4e17a924eec18bd.png)
 Survival Rebalanced attempts to fix or improve vanilla survival's miscellaneous shortcomings with several small and large tweaks that don't deviate too much from how vanilla survival already functions.
 
 ![Three components of Survival Rebalanced: exploration, survival, food](https://cdn.modrinth.com/data/cached_images/4cf407c610ee95343eb1c93f080eedf9adb55211.png)
