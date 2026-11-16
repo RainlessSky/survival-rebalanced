@@ -12,9 +12,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:map",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:exploration_map",
+							"type": "minecraft:exploration_map",
 							"destination": "minecraft:ancient_city",
 							"decoration": "banner_blue",
 							"zoom": 3,
@@ -27,9 +27,9 @@
 					"type": "minecraft:item",
 					"weight": 10,
 					"name": "minecraft:map",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -43,9 +43,9 @@
 					"type": "minecraft:item",
 					"weight": 15,
 					"name": "minecraft:paper",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -64,9 +64,9 @@
 					"type": "minecraft:item",
 					"weight": 15,
 					"name": "minecraft:bread",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -80,9 +80,9 @@
 					"type": "minecraft:item",
 					"weight": 5,
 					"name": "minecraft:stick",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,

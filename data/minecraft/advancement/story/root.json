@@ -9,7 +9,7 @@
 		"description": {
 			"translate": "advancements.story.root.description"
 		},
-		"background": "minecraft:textures/painting/back.png",
+		"background": "minecraft:painting/back",
 		"frame": "task",
 		"show_toast": false,
 		"announce_to_chat": false,

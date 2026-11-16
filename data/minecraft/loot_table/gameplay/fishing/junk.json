@@ -1,0 +1,197 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lily_pad",
+          "weight": 17
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0
+              },
+              "type": "minecraft:set_damage"
+            }
+          ],
+          "name": "minecraft:leather_boots",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bone",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "type": "minecraft:set_potion",
+              "id": "minecraft:water"
+            }
+          ],
+          "name": "minecraft:potion",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:string",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "add": false,
+              "damage": {
+                "type": "minecraft:uniform",
+                "max": 0.9,
+                "min": 0
+              },
+              "type": "minecraft:set_damage"
+            }
+          ],
+          "name": "minecraft:fishing_rod",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bowl",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "modifier": [
+            {
+              "add": false,
+              "count": 10,
+              "type": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:ink_sac"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tripwire_hook",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:seagrass",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:kelp",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_nugget",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:gameplay/fishing/biome_based_saplings",
+          "weight": 10,
+          "condition": {
+			"type": "minecraft:any_of",
+			"terms": [
+				{
+					"type": "minecraft:location_check",
+					"predicate": {
+					"biomes": "#minecraft:has_sapling/acacia_sapling"
+					}
+				},
+				{
+					"type": "minecraft:location_check",
+					"predicate": {
+					"biomes": "#minecraft:has_sapling/azalea"
+					}
+				},
+				{
+					"type": "minecraft:location_check",
+					"predicate": {
+					"biomes": "#minecraft:has_sapling/birch_sapling"
+					}
+				},
+				{
+					"type": "minecraft:location_check",
+					"predicate": {
+					"biomes": "#minecraft:has_sapling/cherry_sapling"
+					}
+				},
+				{
+					"type": "minecraft:location_check",
+					"predicate": {
+					"biomes": "#minecraft:has_sapling/dark_oak_sapling"
+					}
+				},
+				{
+					"type": "minecraft:location_check",
+					"predicate": {
+					"biomes": "#minecraft:has_sapling/jungle_sapling"
+					}
+				},
+				{
+					"type": "minecraft:location_check",
+					"predicate": {
+					"biomes": "#minecraft:has_sapling/mangrove_propagule"
+					}
+				},
+				{
+					"type": "minecraft:location_check",
+					"predicate": {
+					"biomes": "#minecraft:has_sapling/mushrooms"
+					}
+				},
+				{
+					"type": "minecraft:location_check",
+					"predicate": {
+					"biomes": "#minecraft:has_sapling/oak_sapling"
+					}
+				},
+				{
+					"type": "minecraft:location_check",
+					"predicate": {
+					"biomes": "#minecraft:has_sapling/pale_oak_sapling"
+					}
+				},
+				{
+					"type": "minecraft:location_check",
+					"predicate": {
+					"biomes": "#minecraft:has_sapling/spruce_sapling"
+					}
+				}
+			]
+          }
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "minecraft:gameplay/fishing/junk"
+}

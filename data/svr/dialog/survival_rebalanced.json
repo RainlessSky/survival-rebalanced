@@ -1,0 +1,46 @@
+{
+	"type": "minecraft:multi_action",
+	"title": "Survival Rebalanced v1.9.5",
+	"external_title": "Survival Rebalanced",
+	"body": [
+		{
+			"type": "minecraft:plain_message",
+			"contents": "MC 1.21.6 • By RainlessSky"
+		}
+	],
+	"inputs": [],
+	"can_close_with_escape": true,
+	"pause": true,
+	"after_action": "close",
+	"columns": 1,
+	"actions": [
+		{
+			"label": "Settings",
+			"action": {
+				"type": "run_command",
+				"command": "function svr:dialog/open_settings"
+			}
+		},
+		{
+			"label": "Uninstall",
+			"action": {
+				"type": "run_command",
+				"command": "function svr:utility/clean_up"
+			},
+			"tooltip": "Clear all changes and data from Survival Rebalanced."
+		},
+		{
+			"label": "Setup",
+			"action": {
+				"type": "run_command",
+				"command": "function svr:utility/setup"
+			},
+			"tooltip": "Sets up variables for Survival Rebalanced. Note: This is automatically used when a Survival Rebalanced update is detected."
+		},
+		{
+			"label": {
+				"translate": "gui.back"
+			}
+		}
+	]
+}

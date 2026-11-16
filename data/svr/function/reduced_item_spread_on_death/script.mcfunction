@@ -1,0 +1,3 @@
+execute as @a[advancements={svr:logic/reduced_death_drop_spread=true}] at @s positioned ~ ~1.8 ~ as @e[type=minecraft:item,distance=...6] store result entity @s Motion[0] double 0.02 run data get entity @s Motion[0]
+execute as @a[advancements={svr:logic/reduced_death_drop_spread=true}] at @s positioned ~ ~1.8 ~ as @e[type=minecraft:item,distance=...6] store result entity @s Motion[2] double 0.02 run data get entity @s Motion[2]
+advancement revoke @a[advancements={svr:logic/reduced_death_drop_spread=true}] only svr:logic/reduced_death_drop_spread

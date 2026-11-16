@@ -1,0 +1,37 @@
+{
+  "parent": "minecraft:adventure/trade",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+			"type": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"minecraft:nbt": "{VillagerData:{level:5}}"
+			}
+        }
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald_block"
+    },
+    "title": "Villager Mastery",
+    "description": "Trade with a Villager at its maximum level",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "requirement"
+    ]
+  ],
+  "rewards": {
+    "experience": 50
+  },
+  "sends_telemetry_event": false
+}

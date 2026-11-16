@@ -8,9 +8,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:lodestone",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						}
@@ -29,9 +29,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:crossbow",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
@@ -40,16 +40,16 @@
 							"add": false
 						},
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:spectral_arrow",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 10,
@@ -62,9 +62,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:gilded_blackstone",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 8,
@@ -77,9 +77,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:crying_obsidian",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 3,
@@ -92,9 +92,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:gold_block",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						}
@@ -103,9 +103,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:gold_ingot",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 4,
@@ -118,9 +118,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:iron_ingot",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 4,
@@ -133,9 +133,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_sword",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
@@ -143,7 +143,7 @@
 							}
 						},
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						}
@@ -152,9 +152,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_chestplate",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
@@ -162,21 +162,21 @@
 							}
 						},
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						},
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_helmet",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
@@ -184,21 +184,21 @@
 							}
 						},
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						},
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_leggings",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.2,
@@ -206,21 +206,21 @@
 							}
 						},
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						},
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_boots",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.1,
@@ -228,21 +228,21 @@
 							}
 						},
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						},
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:golden_axe",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.4,
@@ -250,12 +250,12 @@
 							}
 						},
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						},
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				}
@@ -272,9 +272,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:string",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -287,9 +287,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:leather",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -302,9 +302,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:arrow",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 5,
@@ -317,9 +317,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:iron_nugget",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 2,
@@ -332,9 +332,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:gold_nugget",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 2,

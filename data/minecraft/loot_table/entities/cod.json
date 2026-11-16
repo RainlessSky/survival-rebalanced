@@ -8,32 +8,28 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:cod",
-					"conditions": [
-						{
-							"condition": "minecraft:entity_properties",
-							"entity": "this",
-							"predicate": {
-								"flags": {
-									"is_on_fire": false
-								}
+					"condition": {
+						"type": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"flags": {
+								"is_on_fire": false
 							}
 						}
-					]
+					}
 				},
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:cooked_cod",
-					"conditions": [
-						{
-							"condition": "minecraft:entity_properties",
-							"entity": "this",
-							"predicate": {
-								"flags": {
-									"is_on_fire": true
-								}
+					"condition": {
+						"type": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"flags": {
+								"is_on_fire": true
 							}
 						}
-					]
+					}
 				}
 			]
 		},
@@ -46,12 +42,10 @@
 					"name": "minecraft:bone_meal"
 				}
 			],
-			"conditions": [
-				{
-					"condition": "minecraft:random_chance",
-					"chance": 0.05
-				}
-			]
+			"condition": {
+				"type": "minecraft:random_chance",
+				"chance": 0.05
+			}
 		}
 	],
 	"random_sequence": "minecraft:entities/cod"

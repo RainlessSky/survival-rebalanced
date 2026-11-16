@@ -1,29 +1,69 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:wooden_hoe",
-			"nbt": "{damage:0}"
+			"id": "minecraft:wooden_hoe"
 		  },
 		"title": "Time to Farm!",
-		"description": "Craft a Wooden Hoe"
+		"description": "Use planks and sticks to make a hoe"
 	  },
-	"parent": "minecraft:story/obtained_wood",
+	"parent": "minecraft:story/crafted_crafting_table",
 	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:inventory_changed",
-			"conditions": {
-				"items": [
-					{
-						"items": [
-							"minecraft:wooden_hoe"
-						]
-					}
-				]
-			}
-		}
-	},
+    "wooden_hoe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:wooden_hoe"
+      }
+    },
+    "stone_hoe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:stone_hoe"
+      }
+    },
+    "copper_hoe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:copper_hoe"
+      }
+    },
+    "iron_hoe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:iron_hoe"
+      }
+    },
+    "gold_hoe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:golden_hoe"
+      }
+    },
+    "diamond_hoe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:diamond_hoe"
+      }
+    },
+    "netherite_hoe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:netherite_hoe_smithing"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wooden_hoe",
+      "stone_hoe",
+      "copper_hoe",
+      "iron_hoe",
+      "gold_hoe",
+      "diamond_hoe",
+      "netherite_hoe"
+    ]
+  ],
 	"rewards": {
-		"experience": 4
+		"experience": 3
 	},
 	"sends_telemetry_event": false
 }

@@ -1,37 +1,73 @@
 {
-	"display": {
-		"icon": {
-			"id": "minecraft:wooden_sword"
-		},
-		"title": "Time to Strike!",
-		"description": "Use planks and sticks to make a sword",
-		"frame": "task",
-		"show_toast": true,
-		"announce_to_chat": false,
-		"hidden": false
-	},
-	"parent": "minecraft:story/obtained_wood",
-	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:inventory_changed",
-			"conditions": {
-				"items": [
-					{
-						"items": [
-							"minecraft:wooden_sword",
-							"minecraft:stone_sword",
-							"minecraft:golden_sword",
-							"minecraft:iron_sword",
-							"minecraft:diamond_sword",
-							"minecraft:netherite_sword"
-						]
-					}
-				]
-			}
-		}
-	},
-	"rewards": {
-		"experience": 3
-	},
-	"sends_telemetry_event": false
+  "display": {
+    "icon": {
+      "id": "minecraft:wooden_sword"
+    },
+    "title": "Time to Strike!",
+    "description": "Use planks and sticks to make a sword",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "minecraft:story/crafted_crafting_table",
+  "criteria": {
+    "wooden_sword": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:wooden_sword"
+      }
+    },
+    "stone_sword": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:stone_sword"
+      }
+    },
+    "copper_sword": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:copper_sword"
+      }
+    },
+    "iron_sword": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:iron_sword"
+      }
+    },
+    "gold_sword": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:golden_sword"
+      }
+    },
+    "diamond_sword": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:diamond_sword"
+      }
+    },
+    "netherite_sword": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:netherite_sword_smithing"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wooden_sword",
+      "stone_sword",
+      "copper_sword",
+      "iron_sword",
+      "gold_sword",
+      "diamond_sword",
+      "netherite_sword"
+    ]
+  ],
+  "rewards": {
+    "experience": 3
+  },
+  "sends_telemetry_event": false
 }

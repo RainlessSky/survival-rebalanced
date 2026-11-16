@@ -1,6 +1,4 @@
-function svr:difficulty_scaling/mob_buffs/mob_buff_dr
 function svr:difficulty_scaling/mob_buffs/mob_buff_fr
 function svr:difficulty_scaling/mob_buffs/mob_buff_l1
 function svr:difficulty_scaling/mob_buffs/mob_buff_l2
 function svr:difficulty_scaling/mob_buffs/mob_buff_l3
-function svr:difficulty_scaling/mob_buffs/mob_buff_spd3

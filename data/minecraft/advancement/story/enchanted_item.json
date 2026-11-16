@@ -3,7 +3,9 @@
 		"icon": {
 			"id": "minecraft:enchanting_table"
 		},
-		"title": "Shiny Shiny",
+		"title": {
+			"translate": "advancements.story.enchant_item.title"
+		},
 		"description": "Enchant an item at an Enchanting Table",
 		"frame": "task",
 		"show_toast": true,

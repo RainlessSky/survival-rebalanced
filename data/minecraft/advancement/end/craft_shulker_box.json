@@ -15,7 +15,7 @@
 		"crafted_shulker_box": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "minecraft:shulker_box"
+				"recipes": "minecraft:shulker_box"
 			}
 		}
 	},

@@ -3,20 +3,18 @@
 		"requirement": {
 			"trigger": "minecraft:tick",
 			"conditions": {
-				"player": [
-					{
-						"condition": "minecraft:entity_properties",
-						"entity": "this",
-						"predicate": {
-							"nbt": "{Health:0.0f}"
-						}
+				"player": {
+					"type": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"nbt": "{Health:0.0f}"
 					}
-				]
+				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "svr:reduced_death_drop_spread/check"
+		"function": "svr:reduced_item_spread_on_death/check"
 	},
 	"sends_telemetry_event": false
 }

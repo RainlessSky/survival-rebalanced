@@ -13,9 +13,9 @@
 					"type": "minecraft:item",
 					"weight": 8,
 					"name": "minecraft:paper",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -29,9 +29,9 @@
 					"type": "minecraft:item",
 					"weight": 7,
 					"name": "minecraft:potato",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 2,
@@ -45,9 +45,9 @@
 					"type": "minecraft:item",
 					"weight": 7,
 					"name": "minecraft:moss_block",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -61,9 +61,9 @@
 					"type": "minecraft:item",
 					"weight": 5,
 					"name": "minecraft:poisonous_potato",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 2,
@@ -77,9 +77,9 @@
 					"type": "minecraft:item",
 					"weight": 7,
 					"name": "minecraft:carrot",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 4,
@@ -93,9 +93,9 @@
 					"type": "minecraft:item",
 					"weight": 7,
 					"name": "minecraft:wheat",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 0,
@@ -109,9 +109,9 @@
 					"type": "minecraft:item",
 					"weight": 10,
 					"name": "minecraft:suspicious_stew",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_stew_effect",
+							"type": "minecraft:set_stew_effect",
 							"effects": [
 								{
 									"type": "minecraft:night_vision",
@@ -169,9 +169,9 @@
 					"type": "minecraft:item",
 					"weight": 6,
 					"name": "minecraft:coal",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 2,
@@ -185,9 +185,9 @@
 					"type": "minecraft:item",
 					"weight": 5,
 					"name": "minecraft:cod",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -201,9 +201,9 @@
 					"type": "minecraft:item",
 					"weight": 2,
 					"name": "minecraft:pumpkin",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -217,9 +217,9 @@
 					"type": "minecraft:item",
 					"weight": 2,
 					"name": "minecraft:bamboo",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -233,9 +233,9 @@
 					"type": "minecraft:item",
 					"weight": 3,
 					"name": "minecraft:gunpowder",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -249,9 +249,9 @@
 					"type": "minecraft:item",
 					"weight": 4,
 					"name": "minecraft:tnt",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -265,9 +265,9 @@
 					"type": "minecraft:item",
 					"weight": 3,
 					"name": "minecraft:leather_helmet",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				},
@@ -275,9 +275,9 @@
 					"type": "minecraft:item",
 					"weight": 3,
 					"name": "minecraft:leather_chestplate",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				},
@@ -285,9 +285,9 @@
 					"type": "minecraft:item",
 					"weight": 3,
 					"name": "minecraft:leather_leggings",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				},
@@ -295,9 +295,9 @@
 					"type": "minecraft:item",
 					"weight": 3,
 					"name": "minecraft:leather_boots",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				},

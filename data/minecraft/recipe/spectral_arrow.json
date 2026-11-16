@@ -3,7 +3,11 @@
 	"category": "equipment",
 	"ingredients": [
 		"minecraft:arrow",
-		"minecraft:glow_ink_sac"
+		[
+          "minecraft:glowstone_dust",
+          "minecraft:glow_ink_sac",
+          "minecraft:glow_berries"
+        ]
 	],
 	"result": {
 		"id": "minecraft:spectral_arrow",

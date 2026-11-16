@@ -4,7 +4,7 @@
 			"id": "minecraft:copper_ingot"
 		},
 		"title": "This Isn't Iron",
-		"description": "Creativity and dexterity is key for using copper",
+		"description": "Smelt a Copper Ingot",
 		"frame": "task",
 		"show_toast": true,
 		"announce_to_chat": false,
@@ -12,19 +12,53 @@
 	},
 	"parent": "minecraft:story/obtained_stone",
 	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:inventory_changed",
-			"conditions": {
-				"items": [
-					{
-						"items": [
-							"minecraft:copper_ingot"
-						]
-					}
-				]
-			}
-		}
-	},
+    "smelt_raw_copper": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:copper_ingot_from_smelting_raw_copper"
+      }
+    },
+    "smelt_copper_ore": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:copper_ingot_from_smelting_copper_ore"
+      }
+    },
+    "smelt_deepslate_copper_ore": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:copper_ingot_from_smelting_deepslate_copper_ore"
+      }
+    },
+    "blast_raw_copper": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:copper_ingot_from_blasting_raw_copper"
+      }
+    },
+    "blast_copper_ore": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:copper_ingot_from_blasting_copper_ore"
+      }
+    },
+    "blast_deepslate_copper_ore": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:copper_ingot_from_blasting_deepslate_copper_ore"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "smelt_raw_copper",
+      "smelt_copper_ore",
+      "smelt_deepslate_copper_ore",
+      "blast_raw_copper",
+      "blast_copper_ore",
+      "blast_deepslate_copper_ore"
+    ]
+  ],
 	"rewards": {
 		"experience": 5
 	},

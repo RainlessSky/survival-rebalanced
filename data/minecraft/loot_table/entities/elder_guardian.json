@@ -8,9 +8,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:prismarine_shard",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 0,
@@ -19,7 +19,7 @@
 							"add": false
 						},
 						{
-							"function": "minecraft:enchanted_count_increase",
+							"type": "minecraft:enchanted_count_increase",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 0,
@@ -39,9 +39,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:cod",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:enchanted_count_increase",
+							"type": "minecraft:enchanted_count_increase",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 0,
@@ -50,18 +50,16 @@
 							"enchantment": "minecraft:looting"
 						},
 						{
-							"function": "minecraft:furnace_smelt",
-							"conditions": [
-								{
-									"condition": "minecraft:entity_properties",
-									"entity": "this",
-									"predicate": {
-										"flags": {
-											"is_on_fire": true
-										}
+							"type": "minecraft:furnace_smelt",
+							"condition": {
+								"type": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"flags": {
+										"is_on_fire": true
 									}
 								}
-							]
+							}
 						}
 					]
 				},
@@ -69,9 +67,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:prismarine_crystals",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:enchanted_count_increase",
+							"type": "minecraft:enchanted_count_increase",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 0,
@@ -95,11 +93,9 @@
 					"name": "minecraft:wet_sponge"
 				}
 			],
-			"conditions": [
-				{
-					"condition": "minecraft:killed_by_player"
-				}
-			]
+			"condition": {
+				"type": "minecraft:killed_by_player"
+			}
 		},
 		{
 			"rolls": 1,
@@ -108,35 +104,36 @@
 				{
 					"type": "minecraft:loot_table",
 					"value": "minecraft:gameplay/fishing/fish",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:furnace_smelt",
-							"conditions": [
-								{
-									"condition": "minecraft:entity_properties",
-									"entity": "this",
-									"predicate": {
-										"flags": {
-											"is_on_fire": true
-										}
+							"type": "minecraft:furnace_smelt",
+							"condition": {
+								"type": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"flags": {
+										"is_on_fire": true
 									}
 								}
-							]
+							}
 						}
 					]
 				}
 			],
-			"conditions": [
-				{
-					"condition": "minecraft:killed_by_player"
-				},
-				{
-					"condition": "minecraft:random_chance_with_enchanted_bonus",
-					"unenchanted_chance": 0.025,
-					"enchanted_chance": 0.01,
-					"enchantment": "minecraft:looting"
-				}
-			]
+			"condition": {
+				"type": "minecraft:all_of",
+				"terms": [
+					{
+						"type": "minecraft:killed_by_player"
+					},
+					{
+						"type": "minecraft:random_chance_with_enchanted_bonus",
+						"unenchanted_chance": 0.025,
+						"enchanted_chance": 0.01,
+						"enchantment": "minecraft:looting"
+					}
+				]
+			}
 		},
 		{
 			"rolls": 1,

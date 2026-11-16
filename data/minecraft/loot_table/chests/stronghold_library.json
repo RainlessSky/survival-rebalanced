@@ -11,11 +11,11 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"weight": 10,
+					"weight": 5,
 					"name": "minecraft:map",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:exploration_map",
+							"type": "minecraft:exploration_map",
 							"destination": "minecraft:ancient_city",
 							"decoration": "banner_blue",
 							"zoom": 3,
@@ -28,9 +28,9 @@
 					"type": "minecraft:item",
 					"weight": 20,
 					"name": "minecraft:book",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -44,9 +44,9 @@
 					"type": "minecraft:item",
 					"weight": 20,
 					"name": "minecraft:paper",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 2,
@@ -68,11 +68,11 @@
 					"type": "minecraft:item",
 					"weight": 10,
 					"name": "minecraft:book",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:enchant_with_levels",
+							"type": "minecraft:enchant_with_levels",
 							"levels": 30,
-							"treasure": true
+							"options": "#minecraft:on_random_loot"
 						}
 					]
 				}

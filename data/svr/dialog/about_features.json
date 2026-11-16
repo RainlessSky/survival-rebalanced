@@ -1,0 +1,114 @@
+{
+	"type": "minecraft:notice",
+	"title": "Survival Rebalanced Features",
+	"external_title": "Survival Rebalanced Features",
+	"body": [
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Regeneration rework:\n",
+				"type": "text",
+				"extra": [
+					{
+						"text": "This feature makes regeneration slower.\n∙ Players regenerate half a heart every 6 seconds.\n∙ Players also get Regeneration 1 when within 8 blocks of a lit Campfire.",
+						"type": "text",
+						"color": "white"
+					}
+				],
+				"color": "yellow"
+			},
+			"width": 300
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Mob buffs:\n",
+				"type": "text",
+				"extra": [
+					{
+						"text": "This feature makes most mobs progressively harder and harder as you progress through the game.",
+						"type": "text",
+						"color": "white"
+					}
+				],
+				"color": "yellow"
+			},
+			"width": 300
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Hunger system changes:\n",
+				"type": "text",
+				"extra": [
+					{
+						"text": "This feature makes players have the following:\n∙ Permanent Hunger 1\n∙ Mining Fatigue 1 below 5 hunger.\n∙ You can starve to death, on Easy/Normal difficulty.",
+						"type": "text",
+						"color": "white"
+					}
+				],
+				"color": "yellow"
+			},
+			"width": 300
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Flammable creepers:\n",
+				"type": "text",
+				"extra": [
+					{
+						"text": "This feature makes Creepers ignite and explode if lit on fire, by anything.",
+						"type": "text",
+						"color": "white"
+					}
+				],
+				"color": "yellow"
+			},
+			"width": 300
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Dolphin jockeys:\n",
+				"type": "text",
+				"extra": [
+					{
+						"text": "This feature makes Drowned have a chance to be riding a Dolphin when spawning.",
+						"type": "text",
+						"color": "white"
+					}
+				],
+				"color": "yellow"
+			},
+			"width": 300
+		},
+		{
+			"type": "minecraft:plain_message",
+			"contents": {
+				"text": "Reduced item spread on death:\n",
+				"type": "text",
+				"extra": [
+					{
+						"text": "This feature makes dropped items on players' death spread significantly less.",
+						"type": "text",
+						"color": "white"
+					}
+				],
+				"color": "yellow"
+			},
+			"width": 300
+		}
+	],
+	"inputs": [],
+	"can_close_with_escape": true,
+	"pause": true,
+	"after_action": "close",
+	"action": {
+		"label": "Back",
+		"action": {
+			"type": "show_dialog",
+			"dialog": "svr:config"
+		}
+	}
+}

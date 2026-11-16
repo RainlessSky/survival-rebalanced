@@ -1,33 +1,68 @@
 {
-	"display": {
-		"icon": {
-			"id": "minecraft:iron_pickaxe",
-			"nbt": "{damage:0}"
-		},
-		"title": "Smithing without Style",
-		"description": "Smelt Raw Iron",
-		"frame": "goal",
-		"show_toast": true,
-		"announce_to_chat": true,
-		"hidden": false
-	},
-	"parent": "minecraft:story/obtained_stone",
-	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:inventory_changed",
-			"conditions": {
-				"items": [
-					{
-						"items": [
-							"minecraft:iron_ingot"
-						]
-					}
-				]
-			}
-		}
-	},
-	"rewards": {
-		"experience": 5
-	},
-	"sends_telemetry_event": false
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_ore"
+    },
+    "title": {
+      "translate": "advancements.story.iron_tools.title"
+    },
+    "description": "Smelt iron into an Iron Ingot",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:story/obtained_stone",
+  "criteria": {
+    "smelt_raw_iron": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:iron_ingot_from_smelting_raw_iron"
+      }
+    },
+    "smelt_iron_ore": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:iron_ingot_from_smelting_iron_ore"
+      }
+    },
+    "smelt_deepslate_iron_ore": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:iron_ingot_from_smelting_deepslate_iron_ore"
+      }
+    },
+    "blast_raw_iron": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:iron_ingot_from_blasting_raw_iron"
+      }
+    },
+    "blast_iron_ore": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:iron_ingot_from_blasting_iron_ore"
+      }
+    },
+    "blast_deepslate_iron_ore": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:iron_ingot_from_blasting_deepslate_iron_ore"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "smelt_raw_iron",
+      "smelt_iron_ore",
+      "smelt_deepslate_iron_ore",
+      "blast_raw_iron",
+      "blast_iron_ore",
+      "blast_deepslate_iron_ore"
+    ]
+  ],
+  "rewards": {
+    "experience": 5
+  },
+  "sends_telemetry_event": false
 }

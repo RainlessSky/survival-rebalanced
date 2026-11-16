@@ -1,3 +1,4 @@
-execute if score enabled svr.hunger_edits matches 1 run function svr:regen_fix/script
-execute if score enabled svr.hunger_edits matches 0 run return 0
-execute if score enabled svr.hunger_edits matches 1 run return 1
+execute if data storage svr:settings {settings:{regeneration_rework_setting:1b}} run gamerule natural_health_regeneration false
+execute if data storage svr:settings {settings:{regeneration_rework_setting:1b}} run function svr:regen_fix/script
+execute if data storage svr:settings {settings:{regeneration_rework_setting:0b}} run return 0
+execute if data storage svr:settings {settings:{regeneration_rework_setting:1b}} run return 1

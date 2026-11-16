@@ -1,7 +1,14 @@
 {
 	"pack": {
-		"pack_format": 61,
-		"description": "§7MC 1.21 §8•§7 By RainlessSky"
+		"description": "§7MC 26.3 §8•§7 By RainlessSky",
+		"min_format": [
+			121,
+			0
+		],
+		"max_format": [
+			121,
+			0
+		]
 	},
 	"filter": {
 		"block": [
@@ -11,7 +18,15 @@
 			},
 			{
 				"namespace": "minecraft",
+				"path": "advancement/recipes/food/baked_potato.json"
+			},
+			{
+				"namespace": "minecraft",
 				"path": "recipe/cooked_beef.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "advancement/recipes/food/cooked_beef.json"
 			},
 			{
 				"namespace": "minecraft",
@@ -19,7 +34,15 @@
 			},
 			{
 				"namespace": "minecraft",
+				"path": "advancement/recipes/food/cooked_porkchop.json"
+			},
+			{
+				"namespace": "minecraft",
 				"path": "recipe/cooked_chicken.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "advancement/recipes/food/cooked_chicken.json"
 			},
 			{
 				"namespace": "minecraft",
@@ -27,7 +50,15 @@
 			},
 			{
 				"namespace": "minecraft",
+				"path": "advancement/recipes/food/cooked_mutton.json"
+			},
+			{
+				"namespace": "minecraft",
 				"path": "recipe/cooked_rabbit.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "advancement/recipes/food/cooked_rabbit.json"
 			},
 			{
 				"namespace": "minecraft",
@@ -35,7 +66,15 @@
 			},
 			{
 				"namespace": "minecraft",
+				"path": "advancement/recipes/food/cooked_cod.json"
+			},
+			{
+				"namespace": "minecraft",
 				"path": "recipe/cooked_salmon.json"
+			},
+			{
+				"namespace": "minecraft",
+				"path": "advancement/recipes/food/cooked_salmon.json"
 			},
 			{
 				"namespace": "minecraft",
@@ -43,15 +82,19 @@
 			},
 			{
 				"namespace": "minecraft",
+				"path": "advancement/recipes/food/dried_kelp.json"
+			},
+			{
+				"namespace": "minecraft",
 				"path": "advancement/story/.*"
 			},
 			{
 				"namespace": "minecraft",
-				"path": "advancement/adventure/.*"
+				"path": "advancement/adventure/spyglass_at_ghast.json"
 			},
 			{
 				"namespace": "minecraft",
-				"path": "advancement/nether/.*"
+				"path": "advancement/adventure/spyglass_at_dragon.json"
 			}
 		]
 	}

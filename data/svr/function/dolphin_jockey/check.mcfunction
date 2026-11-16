@@ -1,3 +1,3 @@
-execute if score enabled svr.dolphin_jockey matches 1 run function svr:dolphin_jockey/script
-execute if score enabled svr.dolphin_jockey matches 0 run return 0
-execute if score enabled svr.dolphin_jockey matches 1 run return 1
+execute if data storage svr:settings {settings:{dolphin_jockeys_setting:1b}} run function svr:dolphin_jockey/script
+execute if data storage svr:settings {settings:{dolphin_jockeys_setting:0b}} run return 0
+execute if data storage svr:settings {settings:{dolphin_jockeys_setting:1b}} run return 1

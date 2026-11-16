@@ -13,9 +13,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:diamond",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -29,9 +29,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:iron_ingot",
 					"weight": 53,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -45,9 +45,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:gold_ingot",
 					"weight": 10,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -61,9 +61,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:golden_sword",
 					"weight": 5,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.7,
@@ -76,9 +76,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:golden_helmet",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.7,
@@ -91,9 +91,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:golden_chestplate",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.7,
@@ -106,9 +106,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:golden_leggings",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.7,
@@ -121,9 +121,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:golden_boots",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.7,
@@ -131,7 +131,7 @@
 							}
 						},
 						{
-							"function": "minecraft:set_enchantments",
+							"type": "minecraft:set_enchantments",
 							"enchantments": {
 								"minecraft:soul_speed": {
 									"type": "minecraft:uniform",
@@ -139,12 +139,10 @@
 									"max": 2
 								}
 							},
-							"conditions": [
-								{
-									"condition": "minecraft:random_chance",
-									"chance": 0.25
-								}
-							]
+							"condition": {
+								"type": "minecraft:random_chance",
+								"chance": 0.25
+							}
 						}
 					]
 				},
@@ -157,9 +155,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:nether_wart",
 					"weight": 5,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 3,
@@ -173,9 +171,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:obsidian",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 2,
@@ -194,9 +192,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:blackstone",
 					"weight": 40,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 0,
@@ -209,10 +207,11 @@
 					"type": "minecraft:item",
 					"name": "minecraft:magma_cream",
 					"weight": 15,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
+								"type": "minecraft:uniform",
 								"min": 1,
 								"max": 2
 							}
@@ -223,9 +222,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:nether_brick",
 					"weight": 50,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -248,9 +247,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:ender_pearl",
 					"weight": 5,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 0,

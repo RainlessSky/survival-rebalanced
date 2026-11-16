@@ -1,0 +1,41 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:crafting_table"
+    },
+    "title": "Benchmarking",
+    "description": "Create and use a Crafting Table",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "minecraft:story/obtained_wood",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:default_block_use",
+      "conditions": {
+        "location": {
+          "type": "minecraft:match_block",
+          "blocks": "minecraft:crafting_table"
+        }
+      }
+    },
+    "requirement2": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:crafting_table"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "requirement2",
+      "requirement"
+    ]
+  ],
+  "rewards": {
+    "experience": 2
+  },
+  "sends_telemetry_event": false
+}

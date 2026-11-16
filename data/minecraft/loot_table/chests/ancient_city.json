@@ -12,9 +12,9 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:enchanted_golden_apple",
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						}
@@ -28,9 +28,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:compass",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						}
@@ -40,9 +40,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:sculk_catalyst",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -61,14 +61,14 @@
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_hoe",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						},
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.5,
@@ -77,7 +77,7 @@
 							"add": false
 						},
 						{
-							"function": "minecraft:enchant_with_levels",
+							"type": "minecraft:enchant_with_levels",
 							"levels": {
 								"type": "minecraft:uniform",
 								"min": 30,
@@ -90,9 +90,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:lead",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						}
@@ -102,9 +102,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_horse_armor",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						}
@@ -114,9 +114,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:saddle",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": 1,
 							"add": false
 						}
@@ -136,9 +136,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_helmet",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.2,
@@ -146,7 +146,7 @@
 							}
 						},
 						{
-							"function": "minecraft:enchant_with_levels",
+							"type": "minecraft:enchant_with_levels",
 							"levels": {
 								"type": "minecraft:uniform",
 								"min": 30,
@@ -159,9 +159,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_chestplate",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.2,
@@ -169,7 +169,7 @@
 							}
 						},
 						{
-							"function": "minecraft:enchant_with_levels",
+							"type": "minecraft:enchant_with_levels",
 							"levels": {
 								"type": "minecraft:uniform",
 								"min": 30,
@@ -182,9 +182,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_leggings",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.2,
@@ -192,7 +192,7 @@
 							}
 						},
 						{
-							"function": "minecraft:enchant_with_levels",
+							"type": "minecraft:enchant_with_levels",
 							"levels": {
 								"type": "minecraft:uniform",
 								"min": 30,
@@ -205,9 +205,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:diamond_boots",
 					"weight": 2,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.2,
@@ -215,7 +215,7 @@
 							}
 						},
 						{
-							"function": "minecraft:enchant_with_levels",
+							"type": "minecraft:enchant_with_levels",
 							"levels": {
 								"type": "minecraft:uniform",
 								"min": 30,
@@ -228,9 +228,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:book",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				},
@@ -238,9 +238,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:sculk",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 4,
@@ -254,9 +254,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:sculk_sensor",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -270,9 +270,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:candle",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -286,9 +286,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:amethyst_shard",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -302,9 +302,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:experience_bottle",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -318,9 +318,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:glow_berries",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -334,9 +334,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:iron_leggings",
 					"weight": 3,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0.2,
@@ -344,7 +344,7 @@
 							}
 						},
 						{
-							"function": "minecraft:enchant_with_levels",
+							"type": "minecraft:enchant_with_levels",
 							"levels": {
 								"type": "minecraft:uniform",
 								"min": 20,
@@ -357,9 +357,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:echo_shard",
 					"weight": 4,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -373,9 +373,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:disc_fragment_5",
 					"weight": 4,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -389,9 +389,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:potion",
 					"weight": 5,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -400,7 +400,7 @@
 							"add": false
 						},
 						{
-							"function": "minecraft:set_potion",
+							"type": "minecraft:set_potion",
 							"id": "minecraft:strong_regeneration"
 						}
 					]
@@ -409,9 +409,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:book",
 					"weight": 5,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:enchant_randomly"
+							"type": "minecraft:enchant_randomly"
 						}
 					]
 				},
@@ -419,9 +419,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:book",
 					"weight": 5,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 3,
@@ -435,9 +435,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:bone",
 					"weight": 5,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -451,9 +451,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:soul_torch",
 					"weight": 5,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 1,
@@ -467,9 +467,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:coal",
 					"weight": 7,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_count",
+							"type": "minecraft:set_count",
 							"count": {
 								"type": "minecraft:uniform",
 								"min": 6,

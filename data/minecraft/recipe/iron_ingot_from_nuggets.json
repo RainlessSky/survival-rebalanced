@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"group": "iron_ingot",
+	"ingredients": [
+		"minecraft:iron_nugget",
+		"minecraft:iron_nugget",
+		"minecraft:iron_nugget",
+		"minecraft:iron_nugget"
+	],
+	"result": {
+		"count": 1,
+		"id": "minecraft:iron_ingot"
+	}
+}

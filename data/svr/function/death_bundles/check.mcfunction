@@ -1,7 +1,0 @@
-execute store result storage svr:world_data gamerules.keepInventory byte 1 run gamerule keepInventory
-execute if score enabled svr.death_bundles matches 0 run return 0
-execute if score enabled svr.death_bundles matches 1 run execute if data storage svr:world_data {gamerules:{keepInventory:1b}} run execute as @a unless data entity @s {Inventory:[]} run function svr:death_bundles/script with entity @s
-execute if score enabled svr.death_bundles matches 1 run execute if data storage svr:world_data {gamerules:{keepInventory:1b}} run return 1
-execute if score enabled svr.death_bundles matches 1 run execute if data storage svr:world_data {gamerules:{keepInventory:0b}} run tellraw @a [{"text":"[Survival Rebalanced]","color":"#E78D7A"},{"text":" Death bundles is enabled and detected gamerule keepInventory as disabled. keepInventory has been re-enabled to prevent item duplication. ","color":"#E3B11F"},{"text":"If this is being spammed, it's likely there is an incompatibility with something!","color":"gold","bold":true}]
-execute if score enabled svr.death_bundles matches 1 run execute if data storage svr:world_data {gamerules:{keepInventory:0b}} run gamerule keepInventory true
-execute if score enabled svr.death_bundles matches 1 run execute if data storage svr:world_data {gamerules:{keepInventory:0b}} run return 2

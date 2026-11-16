@@ -1,1 +1,0 @@
-execute at @e[type=item,nbt={Item:{id:"minecraft:potion",Count:1b,tag:{Potion:"minecraft:water"}}}] run function svr:cauldron_brewing/brew/awkward_potion

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type_specific/player": {
+      "gamemode": [
+        "survival",
+        "adventure"
+      ],
+      "food": {
+        "level": {
+          "max": 0
+        }
+      }
+    }
+  }
+}

@@ -1,3 +1,0 @@
-execute at @e[type=item,nbt={Item:{id:"minecraft:potion",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron[level=1] run function svr:cauldron_brewing/detect_potion_type
-execute at @e[type=item,nbt={Item:{id:"minecraft:potion",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron[level=2] run function svr:cauldron_brewing/detect_potion_type
-execute at @e[type=item,nbt={Item:{id:"minecraft:potion",Count:1b}}] if block ~ ~ ~ minecraft:water_cauldron[level=3] run function svr:cauldron_brewing/detect_potion_type

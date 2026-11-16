@@ -3,8 +3,8 @@
 		"icon": {
 			"id": "minecraft:oak_log"
 		},
-		"title": "How did I just...",
-		"description": "How do you §opunch§a a tree down?",
+		"title": "Getting Wood",
+		"description": "Attack a tree until a block of wood pops out",
 		"frame": "goal",
 		"show_toast": true,
 		"announce_to_chat": false,
@@ -17,27 +17,14 @@
 			"conditions": {
 				"items": [
 					{
-						"items": [
-							"minecraft:oak_planks",
-							"minecraft:spruce_planks",
-							"minecraft:birch_planks",
-							"minecraft:jungle_planks",
-							"minecraft:acacia_planks",
-							"minecraft:dark_oak_planks",
-							"minecraft:mangrove_planks",
-							"minecraft:cherry_planks",
-							"minecraft:bamboo_planks",
-							"minecraft:crimson_planks",
-							"minecraft:warped_planks",
-							"minecraft:birch_planks"
-						]
+						"items": "#minecraft:logs"
 					}
 				]
 			}
 		}
 	},
 	"rewards": {
-		"experience": 2
+		"experience": 1
 	},
 	"sends_telemetry_event": false
 }

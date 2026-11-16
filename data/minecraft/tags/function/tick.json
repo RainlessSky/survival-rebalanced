@@ -1,6 +1,10 @@
 {
     "values": [
-    "svr:difficulty_scaling/mob_buffs/check",
-    "svr:simple_checks"
+		"svr:difficulty_scaling/mob_buffs/check",
+		"svr:dolphin_jockey/check",
+		"svr:flammable_creepers/check",
+		"svr:hunger_related/check",
+		"svr:regen_fix/check",
+		"svr:reduced_item_spread_on_death/check"
     ]
-    }
+}

@@ -19,9 +19,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:bow",
 					"weight": 15,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0,
@@ -30,7 +30,7 @@
 							"add": false
 						},
 						{
-							"function": "minecraft:enchant_with_levels",
+							"type": "minecraft:enchant_with_levels",
 							"levels": 30
 						}
 					]
@@ -39,9 +39,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:fishing_rod",
 					"weight": 10,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:set_damage",
+							"type": "minecraft:set_damage",
 							"damage": {
 								"type": "minecraft:uniform",
 								"min": 0,
@@ -50,7 +50,7 @@
 							"add": false
 						},
 						{
-							"function": "minecraft:enchant_with_levels",
+							"type": "minecraft:enchant_with_levels",
 							"levels": 30
 						}
 					]
@@ -59,9 +59,9 @@
 					"type": "minecraft:item",
 					"name": "minecraft:book",
 					"weight": 30,
-					"functions": [
+					"modifier": [
 						{
-							"function": "minecraft:enchant_with_levels",
+							"type": "minecraft:enchant_with_levels",
 							"levels": 30
 						}
 					]

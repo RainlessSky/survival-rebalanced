@@ -1,27 +1,67 @@
 {
 	"display": {
 		"icon": {
-			"id": "minecraft:wooden_pickaxe",
-			"nbt": "{damage:0}"
+			"id": "minecraft:wooden_pickaxe"
 		  },
 		"title": "Time to Mine!",
-		"description": "Craft a Wooden Pickaxe"
+		"description": "Use planks and sticks to make a pickaxe"
 	  },
-	"parent": "minecraft:story/obtained_wood",
+	"parent": "minecraft:story/crafted_crafting_table",
 	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:inventory_changed",
-			"conditions": {
-				"items": [
-					{
-						"items": [
-							"minecraft:wooden_pickaxe"
-						]
-					}
-				]
-			}
-		}
-	},
+    "wooden_pickaxe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:wooden_pickaxe"
+      }
+    },
+    "stone_pickaxe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:stone_pickaxe"
+      }
+    },
+    "copper_pickaxe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:copper_pickaxe"
+      }
+    },
+    "iron_pickaxe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:iron_pickaxe"
+      }
+    },
+    "gold_pickaxe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:golden_pickaxe"
+      }
+    },
+    "diamond_pickaxe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:diamond_pickaxe"
+      }
+    },
+    "netherite_pickaxe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipes": "minecraft:netherite_pickaxe_smithing"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wooden_pickaxe",
+      "stone_pickaxe",
+      "copper_pickaxe",
+      "iron_pickaxe",
+      "gold_pickaxe",
+      "diamond_pickaxe",
+      "netherite_pickaxe"
+    ]
+  ],
 	"rewards": {
 		"experience": 3
 	},
