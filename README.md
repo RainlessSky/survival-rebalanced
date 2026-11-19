@@ -107,6 +107,10 @@ A good side effect of making Iron more expensive is that it now takes a lot of i
   - A bit more detailed on the progression of the game
   - *Almost everything except for the root advancement is in English only though (feel free to translate it and let me know so I can link it here!)*
 - Moved "Is it a ____?" advancements to their respective dimensions' tabs
+- Fishing loot table type odds have been adjusted
+- "junk" fishing loot table has had several new additions
+  - All types of saplings (including Azaleas and mushrooms!) can now be fished up in their respective biomes
+  - Added Seagrass, Kelp, and Gold Nugget
  
 </details>
 
