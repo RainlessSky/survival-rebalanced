@@ -38,8 +38,6 @@ For example, to disable progression-based mob buffs, run:`/data merge storage sv
 
 ### Loot
 * You can find three new explorer maps across two dimensions
-* Adjustments to loot in multiple structures
-* All equipment spawns with a bit of durability used
 * Heart of the Sea can be dropped by elder guardians instead of buried treasure
 * Updated fishing loot
 
@@ -99,24 +97,6 @@ A good side effect of making Iron more expensive is that it now takes a lot of i
   - Trident costs 3 Quartz, 1 Heart of the Sea, and 1 Prismarine Shard
 - Changed Spectral Arrow recipe to use Glowstone, Glow Inc Sac, or Glow Berries, instead of exclusively Glowstone
 
-### Loot changes
-- Rebalanced the shipwreck loot tables
-  - Reduced high-value mineral rates
-  - Coast armor trim is no longer contained in shipwrecks; see next change
-- Rebalanced the buried treasure loot table
-  - Coast armor trim can now be contained in buried treasure
-  - Heart of the Sea is no longer contained in buried treasure; see next change
-- Elder Guardians now have a 25% chance of dropping a Heart of the Sea
-- Explorer maps for Nether Fortress, Bastion Remnant, and Ancient City have been added
-  - Nether Fortress Explorer Map: piglin bartering
-  - Bastion Remnant Explorer Map: piglin bartering
-  - Ancient City Explorer Map: Villager Cartographer chests & Stronghold library chests
-- All equipment found in loot now generates missing some durability
-
-### Other changes
-- Villages spawn less often
-  - For the quality and quantity of loot there is, and the utility of the villagers themselves, you probably shouldn't be able to see 3-4 villages in a 512x512 area
-
 ## Less-important changes
 - Creepers now ignite apon being lit on fire
   - This can be toggled in the config
@@ -127,18 +107,6 @@ A good side effect of making Iron more expensive is that it now takes a lot of i
   - A bit more detailed on the progression of the game
   - *Almost everything except for the root advancement is in English only though (feel free to translate it and let me know so I can link it here!)*
 - Moved "Is it a ____?" advancements to their respective dimensions' tabs
-
-### Loot changes
-- Changed leatherworker's village house loot table
-  - Saddles are more common
-  - Rabbit Hide can now be generated
-- Edited both Jungle Temple loot tables
-  - Dispensers in the structure now can contain Poison and Weakness tipped arrows
-  - Chest loot slightly adjusted
-- Fishing loot table type odds have been adjusted
-- "junk" fishing loot table has had several new additions
-  - All types of saplings (including Azaleas and mushrooms!) can now be fished up in their respective biomes
-  - Added Seagrass, Kelp, and Gold Nugget
  
 </details>
 
@@ -146,11 +114,9 @@ A good side effect of making Iron more expensive is that it now takes a lot of i
   The following list contains all features in Survival Rebalanced that cannot be toggled on/off. This is an unfortunate limitation of datapacks. If you know how to dig through files, you could delete the features' files and mentions of them.
 
 - Additional explorer maps
-- Adjusted structure loot
 - Advancement changes and additions
 - Recipe changes and additions
 - Inability to cook food in the furnace
-- Reduced village spawn rate
 
 If you want to remove Survival Rebalanced from a world, first uninstall it using `/function svr:utility/clean_up`, and **then** disable the data pack. This cleans up all saved data, scoreboard objectives, and active changes from Survival Rebalanced.
 
@@ -159,4 +125,3 @@ If you want to remove Survival Rebalanced from a world, first uninstall it using
 
 - Functions are not optimized optimally
 </details>
-
