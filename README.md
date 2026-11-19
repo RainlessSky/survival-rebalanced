@@ -123,9 +123,3 @@ A good side effect of making Iron more expensive is that it now takes a lot of i
 - Inability to cook food in the furnace
 
 If you want to remove Survival Rebalanced from a world, first uninstall it using `/function svr:utility/clean_up`, and **then** disable the data pack. This cleans up all saved data, scoreboard objectives, and active changes from Survival Rebalanced.
-
-<details>
-<summary>KNOWN ISSUES</summary>
-
-- Functions are not optimized optimally
-</details>
