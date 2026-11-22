@@ -1,20 +1,27 @@
 {
-	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:tick",
-			"conditions": {
-				"player": {
-					"type": "minecraft:entity_properties",
-					"entity": "this",
-					"predicate": {
-						"nbt": "{Health:0.0f}"
-					}
-				}
-			}
-		}
-	},
-	"rewards": {
-		"function": "svr:reduced_item_spread_on_death/check"
-	},
-	"sends_telemetry_event": false
+  "parent": "svr:logic/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": {
+          "type": "minecraft:any_of",
+          "terms": [
+            {
+              "type": "minecraft:killed_by_player",
+              "inverse": false
+            },
+            {
+              "type": "minecraft:killed_by_player",
+              "inverse": true
+            }
+          ]
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "svr:reduced_item_spread_on_death/check"
+  },
+  "sends_telemetry_event": false
 }

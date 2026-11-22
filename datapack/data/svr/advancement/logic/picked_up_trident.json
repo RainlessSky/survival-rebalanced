@@ -1,0 +1,19 @@
+{
+  "parent": "svr:logic/root",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:trident"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "svr:repairable_tridents/advancement"
+  },
+  "sends_telemetry_event": false
+}
