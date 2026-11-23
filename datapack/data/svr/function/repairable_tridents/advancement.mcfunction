@@ -16,7 +16,7 @@ item modify entity @s container.* {\
           "svr:repairable":1\
         },\
         "minecraft:repairable":{\
-          items:["minecraft:prismarine_shard","minecraft:heart_of_the_sea"]\
+          items:["minecraft:prismarine_shard"]\
         }\
       }\
     }\
