@@ -1,1 +1,1 @@
-execute unless data storage svr:world_data {svr_version:226} run function svr:utility/setup
+execute unless data storage svr:world_data {svr_version:229} run function svr:utility/setup

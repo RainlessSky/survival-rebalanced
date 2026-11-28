@@ -45,5 +45,5 @@ execute if score enabled svr.update.scoreboard_exists matches 0 run data merge s
 execute store success score enabled svr.update.scoreboard_exists run data get storage svr:settings settings.reduced_item_spread_on_death_setting
 execute if score enabled svr.update.scoreboard_exists matches 0 run data merge storage svr:settings {settings:{reduced_item_spread_on_death_setting:1b}}
 
-data merge storage svr:world_data {svr_version:226}
+data merge storage svr:world_data {svr_version:229}
 return run tellraw @s [{"text":"[Survival Rebalanced]","color":"#E78D7A"},{"text":" Survival Rebalanced is now set up! It is recommended to run this again when updating Survival Rebalanced.","color":"white"}]
